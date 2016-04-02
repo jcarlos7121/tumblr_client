@@ -50,7 +50,7 @@ module Tumblr
     end
 
     def link(blog_name, options = {})
-      valid_opts = STANDARD_POST_OPTIONS + [:title, :url, :description]
+      valid_opts = STANDARD_POST_OPTIONS + [:title, :url, :description, :thumbnail]
       validate_options(valid_opts, options)
 
       options[:type] = 'link'
